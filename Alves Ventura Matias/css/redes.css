@@ -1,0 +1,414 @@
+* {
+    margin: auto;
+    padding: 0px;
+    justify-content: center;
+    transition: all .5s;
+}
+
+body {
+    background: url("/Material/fondo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.a {
+    margin: 0 auto;
+}
+
+.gral {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+}
+
+.container .conocimiento {
+    height: 0px;
+    overflow: hidden;
+    background: rgba( 0, 0, 0, .7);
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.conocimiento a {
+    text-decoration: none;
+    color: #000;
+    margin-top: 5px;
+}
+
+.container {
+    margin: 30px;
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #050581;
+    padding-top: 12px;
+    border-radius: 50%;
+    color: #fff;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgba(24, 133, 87, 1) 0%, rgba(29, 253, 198, 1) 40%, rgba(69, 128, 252, 1) 87%);
+    background-size: 200% 100%;
+}
+
+.imagen img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.container:hover {
+    border-radius: 10%;
+}
+
+.container2:hover {
+    border-radius: 10%;
+}
+
+.container3:hover {
+    border-radius: 10%;
+}
+
+.container4:hover {
+    border-radius: 10%;
+}
+
+.container5:hover {
+    border-radius: 10%;
+}
+
+.container6:hover {
+    border-radius: 10%;
+}
+
+.container:hover .conocimiento {
+    background-position: 100% 0%;
+    height: 70px;
+    opacity: 1;
+}
+
+.imagen img:hover {
+    transform: scale(1.1);
+}
+
+.container2 {
+    margin: 30px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #050581;
+    padding-top: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(158, 151, 150, 1) 0%, rgba(97, 74, 69, 1) 47%, rgba(214, 50, 50, 0.9948354341736695) 87%);
+    background-size: 200% 100%;
+}
+
+.imagen2 img {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.container2:hover .conocimiento {
+    background-position: 100% 0%;
+    height: 70px;
+    opacity: 1;
+}
+
+.imagen2 img:hover {
+    transform: scale(1.1);
+}
+
+.container2 .conocimiento {
+    height: 0px;
+    overflow: hidden;
+    background: rgba( 0, 0, 0, .7);
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.container3 {
+    margin: 30px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #050581;
+    padding-top: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(221, 142, 4, 1) 0%, rgba(76, 69, 97, 1) 47%, rgba(50, 139, 214, 0.9948354341736695) 87%);
+    background-size: 200% 100%;
+}
+
+.imagen3 img {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.container3:hover .conocimiento {
+    background-position: 100% 0%;
+    height: 90px;
+    opacity: 1;
+}
+
+.imagen3 img:hover {
+    transform: scale(1.1);
+}
+
+.container3 .conocimiento {
+    height: 0px;
+    overflow: hidden;
+    background: rgba( 0, 0, 0, .7);
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.container4 {
+    margin: 30px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #050581;
+    padding-top: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(72, 72, 223, 1) 0%, rgba(106, 5, 194, 1) 45%, rgba(166, 3, 102, 1) 96%);
+    background-size: 200% 100%;
+}
+
+.imagen4 img {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.container4:hover .conocimiento {
+    background-position: 100% 0%;
+    height: 70px;
+    opacity: 1;
+}
+
+.imagen4 img:hover {
+    transform: scale(1.1);
+}
+
+.container4 .conocimiento {
+    height: 0px;
+    overflow: hidden;
+    background: rgba( 0, 0, 0, .7);
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.container5 {
+    margin: 30px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #050581;
+    padding-top: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(72, 194, 223, 1) 0%, rgba(5, 104, 194, 1) 45%, rgba(24, 3, 166, 1) 96%);
+    background-size: 200% 100%;
+}
+
+.imagen5 img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.container5:hover .conocimiento {
+    background-position: 100% 0%;
+    height: 70px;
+    opacity: 1;
+}
+
+.imagen5 img:hover {
+    transform: scale(1.1);
+}
+
+.container5 .conocimiento {
+    height: 0px;
+    overflow: hidden;
+    background: rgba( 0, 0, 0, .7);
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.container6 {
+    margin: 30px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #050581;
+    padding-top: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(223, 102, 72, 1) 0%, rgba(194, 132, 5, 1) 41%, rgba(3, 121, 166, 1) 83%);
+    background-size: 200% 100%;
+}
+
+.imagen6 img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.container6:hover .conocimiento {
+    background-position: 100% 0%;
+    height: 70px;
+    opacity: 1;
+}
+
+.imagen6 img:hover {
+    transform: scale(1.1);
+}
+
+.container6 .conocimiento {
+    height: 0px;
+    overflow: hidden;
+    background: rgba( 0, 0, 0, .7);
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.proyectos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.project .txt {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 35px;
+    color: #fff;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project {
+    width: 250px;
+    background: linear-gradient(100deg, rgba(204, 96, 33, 1) 0%, rgba(138, 30, 56, 1) 100%);
+    color: #fff;
+    margin: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0.4em 5px rgb(58, 58, 58);
+}
+
+.icon {
+    margin: auto;
+}
+
+.wrap .button {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px #716967;
+    transition: all 0.5s ease-out;
+}
+
+.wrap .button .icon {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.wrap .button .icon i {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.wrap .button:hover {
+    width: 200px;
+}
+
+.wrap .button span {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.container1 h1 {
+    margin-top: 20px;
+}
+
+.barras {
+    height: 30px;
+    background: #000;
+    opacity: 0.7;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#a {
+    width: 140px;
+}
+
+#b {
+    width: 155px;
+}
+
+#c {
+    width: 130px;
+}
+
+@media (max-width:380px) {
+    .gral {
+        width: 100%;
+    }
+    .proyectos,
+    .project {
+        width: 100%;
+    }
+}

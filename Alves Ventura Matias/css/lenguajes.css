@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	margin:auto;
+	justify-content: center;
+	transition:all 1s;
+}
+body{
+	background-color: #000;
+}
+.container-gral{
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+	width: 250px;
+	height: 360px;
+	color:white;
+	border-radius: 5%;
+	background-color: #717171;
+	overflow: hidden;
+}
+
+.container-gral img{
+	display: block;
+}
+.text{
+	margin-top: 30px;
+}
+
+.container-gral:hover{
+	height: 580px;
+	transition: all 1s ease-out;
+	background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.container-gral img:hover{
+	padding-bottom: 10px; 
+	border-bottom: 2px solid black;
+}

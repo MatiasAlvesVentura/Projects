@@ -1,0 +1,294 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto Slab', 'Shippori Mincho', serif;
+    font-size: 17px;
+    transition: all 1.5s;
+    scroll-margin-top: 90px;
+}
+
+.box-general {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'nav nav nav' 'separador separador separador' 'cabecera cabecera cabecera' 'cuerpo cuerpo cuerpo' 'prefooter prefooter prefooter' 'footer footer footer';
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(254, 254, 254, 1) 100%);
+}
+
+.separador {
+    grid-area: separador;
+    height: 80px;
+}
+
+.Cabecera {
+    clip-path: polygon(0 26%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 28%, 100% 52%, 100% 85%, 66% 94%, 35% 84%, 0 90%, 0 51%);
+    width: 100%;
+    height: 400px;
+    background: radial-gradient(circle, rgba(244, 153, 101, 1) 0%, rgba(191, 51, 9, 1) 48%, rgba(254, 138, 71, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 4px solid #000;
+    z-index: 1;
+    grid-area: cabecera;
+    animation-name: transicion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes transicion {
+    0% {
+        background-size: 124% 80%;
+    }
+    100% {
+        background-size: 250% 250%;
+    }
+}
+
+.Cabecera h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.Cabecera img {
+    width: 220px;
+    height: 220px;
+    display: block;
+    border-radius: 100%;
+    box-shadow: 0 0 8px 8px rgb(243, 111, 35);
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.Cabecera img:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+
+.about {
+    width: 60%;
+    padding: 20px;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 200%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.presentacion {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+    text-align: center;
+}
+
+.preFooter {
+    grid-area: prefooter;
+    min-height: 200px;
+}
+
+.Footer {
+    grid-area: footer;
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.derechos {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 100%;
+    background-color: #424141;
+    text-align: center;
+}
+
+.footer .circles {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #f1f1f1;
+    margin: 5px 20px 5px 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #de7e30;
+    color: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i {
+    line-height: 70px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btn:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-image: linear-gradient(90deg, rgba(230, 139, 65, 1) 0%, rgba(194, 68, 5, 1) 45%, rgba(166, 129, 3, 1) 96%);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before {
+    animation: hover 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+.btn:active {
+    background-image: linear-gradient(90deg, rgba(230, 139, 65, 1) 0%, rgba(194, 68, 5, 1) 45%, rgba(166, 129, 3, 1) 96%);
+}
+
+@keyframes hover {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        left: -10%;
+        top: -10%;
+    }
+}
+
+.cuerpo {
+    grid-area: cuerpo;
+}
+
+.exp p {
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    margin-bottom: 15px;
+}
+
+.curriculum {
+    margin-top: 30px;
+    animation: zoom 2s 2s infinite alternate;
+}
+
+.curriculum a {
+    text-decoration: none;
+    padding: 8px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    font-size: 22px;
+    margin: auto;
+    text-align: center;
+}
+
+.curriculum a:hover {
+    background-color: grey;
+}
+
+.about .about-cuerpo {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.about-cuerpo .unt {
+    text-decoration: none;
+    color: #B0580A;
+    font-size: 25px;
+}
+
+.about-lateral strong,
+.about-cuerpo strong {
+    color: #B0580A;
+    font-size: 23px;
+}
+
+.about-lateral i {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.about {
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    width: 70vw;
+}
+
+.about-lateral {
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+}
+
+.desc {
+    font-size: 18px;
+    font-family: 'Shippori Mincho';
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+@media (max-width: 700px) {
+    .about {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .box-general {
+        width: 100vw;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        z-index: 200;
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
